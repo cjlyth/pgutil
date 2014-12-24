@@ -23,7 +23,7 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
-  <component name="DataSourceManagerImpl" format="xml" hash="4256949561">
+  <component name="DataSourceManagerImpl" format="xml" hash="2053187777">
     <data-source source="LOCAL" name="PostgreSQL - publicrelay@localhost" uuid="fa43512b-d727-4048-ba4c-308940d45dbc">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
