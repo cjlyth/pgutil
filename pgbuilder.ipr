@@ -302,7 +302,7 @@
     <list size="0" />
   </component>
   <component name="VcsDirectoryMappings">
-    <mapping directory="" vcs="" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
   </component>
   <component name="dataSourceStorageLocal">
     <data-source name="PostgreSQL - publicrelay@172.17.0.3" uuid="fa43512b-d727-4048-ba4c-308940d45dbc">

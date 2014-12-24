@@ -95,10 +95,10 @@ docker run -it --link pdb:postgres --rm \
 }
 function postgres_restore()
 {
-docker run -it --link pdb:postgres --rm \
+docker run --link pdb:postgres --rm \
 	--env-file="${ENVFILE}" \
 	-v /Users/cjlyth/aug29a.pgdump:/tmp/pdb.pgdump:ro \
-	postgres sh -c 'exec pg_restore -h "$POSTGRES_PORT_5432_TCP_ADDR" -j 5 -v --no-owner --no-tablespaces --no-privileges --no-security-labels --disable-triggers --dbname publicrelay /tmp/pdb.pgdump'
+	postgres sh -c 'exec pg_restore -h "$POSTGRES_PORT_5432_TCP_ADDR" -j 2 -v --no-owner --no-tablespaces --no-privileges --no-security-labels --disable-triggers --dbname publicrelay /tmp/pdb.pgdump'
 
 }
 
