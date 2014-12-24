@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# cat /etc/default/docker
+# DOCKER_OPTS="--dns 8.8.8.8 --dns 8.8.4.4 --storage-opt dm.basesize=50G"
 
 ENVFILE=${ENVFILE:-/tmp/pdb.env}
 
