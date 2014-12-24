@@ -42,10 +42,15 @@ function start_db()
 		--env-file="${ENVFILE}" \
 		-d postgres
 }
-
 is_paused || is_exited || is_running || is_restarting || {
 	echo "Creating container 'pdb'"
 	start_db >/dev/null
+	echo "Created container 'pdb', waiting a few seconds..."
+	sleep 5
+	 is_running || {
+		echo "Failed to start after sleep, can't continue"
+		exit 3
+	}
 }
 
 is_paused && {
