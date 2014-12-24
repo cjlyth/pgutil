@@ -75,6 +75,7 @@ is_running || {
 function drop_database()
 {
 # DROP DATABASE IF EXISTS publicrelay;
+# TODO: add version
 docker run -t --link pdb:postgres --rm \
 	--env-file="${ENVFILE}" \
 	postgres sh -c 'exec dropdb -e --if-exists -h "$POSTGRES_PORT_5432_TCP_ADDR" -p "$POSTGRES_PORT_5432_TCP_PORT" publicrelay'

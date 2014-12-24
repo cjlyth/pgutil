@@ -23,12 +23,12 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
-  <component name="DataSourceManagerImpl" format="xml" hash="3479822199">
-    <data-source source="LOCAL" name="PostgreSQL - publicrelay@172.17.0.68" uuid="fa43512b-d727-4048-ba4c-308940d45dbc">
+  <component name="DataSourceManagerImpl" format="xml" hash="4256949561">
+    <data-source source="LOCAL" name="PostgreSQL - publicrelay@localhost" uuid="fa43512b-d727-4048-ba4c-308940d45dbc">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://172.17.0.68:5432/publicrelay</jdbc-url>
+      <jdbc-url>jdbc:postgresql://localhost:5432/publicrelay</jdbc-url>
       <libraries />
     </data-source>
   </component>
@@ -305,7 +305,7 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
   </component>
   <component name="dataSourceStorageLocal">
-    <data-source name="PostgreSQL - publicrelay@172.17.0.68" uuid="fa43512b-d727-4048-ba4c-308940d45dbc">
+    <data-source name="PostgreSQL - publicrelay@localhost" uuid="fa43512b-d727-4048-ba4c-308940d45dbc">
       <secret-storage>master_key</secret-storage>
       <user-name>postgres</user-name>
       <schema-pattern>*.pg_catalog *.public</schema-pattern>
